@@ -1,0 +1,39 @@
+{% include 'header.html' %}  
+    Formulario a editar
+    {% for category in categories %}
+    
+        <form action="/update" method="post" enctype="multipart/form-data">
+        
+            Nombre:
+            <input type="text" value="{{category[0]}}" name="txtName" id="txtNombre">
+            <br>
+
+            Best Offer:
+            <input type="text" value="{{category[1]}}" name="txtBestOffer" id="txtBestOffer">
+            <br>
+
+            Auto Pay:
+            <input type="text" value="{{category[2]}}" name="txtAutoPay" id="txtAutoPay">
+            <br>
+
+            Level:
+            <input type="number" value="{{category[3]}}" name="numberLevel" id="numberLevel">
+            <br>
+
+            Parent ID:
+            <input type="number" value="{{category[4]}}" name="numberParentId" id="numberParentId">
+            <br>
+            
+            ID:
+            <input type="number" value="{{category[5]}}" name="numberId" id="numberId">
+            <br>
+
+            Leaf:
+            <input type="text" value="{{category[6]}}" name="txtLeaf" id="txtCLeaf">
+            <br>
+            <br>
+            <input type="submit" value="Guardar">
+
+        </form>
+    {% endfor %}
+{% include 'footer.html' %}

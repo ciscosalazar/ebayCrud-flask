@@ -1,0 +1,38 @@
+{% include 'header.html' %}  
+    <form action="/store" method="post" enctype="multipart/form-data">
+    
+        Nombre:
+        <input type="text" name="txtName" id="txtNombre">
+        <br>
+
+        Best Offer:
+        <input type="text" name="txtBestOffer" id="txtBestOffer">
+        <br>
+
+        Auto Pay:
+        <input type="text" name="txtAutoPay" id="txtAutoPay">
+        <br>
+
+        Level:
+        <input type="number" name="numberLevel" id="numberLevel">
+        <br>
+
+        Parent ID:
+        <input type="number" name="numberParentId" id="numberParentId">
+        <br>
+
+        ID:
+        <input type="number" name="numberId" id="numberId">
+        <br>
+
+        Leaf:
+        <input type="text" name="txtLeaf" id="txtCLeaf">
+        <br>
+        <br>
+        <!-- <button type="submit" class="btn btn-primary" data-toggle="button" aria-pressed="false" autocomplete="off">Agregar</button> -->
+        <input type="submit" value="Agregar">
+
+
+
+    </form>
+{% include 'footer.html' %}
